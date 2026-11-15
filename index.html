@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    
+   <nav class="navbar bg-1 fg-2 md:navbar-expand">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> The Sweet Spot</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo02" aria-labelledby="navbarTogglerDemo02Label">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarTogglerDemo02Label">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link disabled" aria-disabled="true" href="Contact.html">Contact Us</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn-outline theme-success" type="submit">Search</button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+
+<div class="container mt-5">
+    <div id="heroCarousel" class="...">
+  <div class="carousel-inner rounded-5">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <div class="carousel-overlay-controls">
+    <div>
+      <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<div class="container mt-5">
+
+    <div class="row g-4">   
+
+        <section class="col-12 md:col-6 lg:col-4">
+            <div class="card h-100">
+        <img src="images/cakes.jpeg" class="card-img-top" alt="variety of cakes on cake stands with different flavours and decorations.">
+    
+    <div class="card-body">
+        <h4 class="card-title">Cakes</h4>
+
+        <div class="accordion">
+       
+        <details class="accordion-item" name="accordionExample" closed>
+
+        <summary class="accordion-header">
+        Description
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+        </summary>
+            
+        <div class="accordion-body">
+            <p class="card-text">From classic birthday cakes to beautifully decorated, to custom for any theme. There's a cake for every occasion!</p>    
+        </div>
+
+        </details>
+
+        </div>
+
+        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#cakeDialog">
+        Explore Cakes
+         </button>
+
+    <dialog class="dialog" id="cakeDialog">
+  
+        <div class="dialog-header">
+        <h1 class="dialog-title">Life is what you Cake it!  </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+ 
+        <div class="dialog-body">
+         <p>Cakes come in endless flavours, styles, and designs. Whether you love rich chocolate, light vanilla, or fruity fillings, there's always something to celebrate! "Dig In!" for more information! </p>
+         </div>
+  
+         <div class="dialog-footer">
+         <button type="button" class="btn-solid theme-primary">Dig In!</button>
+        </div>
+    </dialog>
+
+    </div>
+
+            </div>
+
+        </section>
+
+
+
+
+         <section class="col-12 md:col-6 lg:col-4">
+             <div class="card h-100">
+        <img src="images/pastry.jpeg" class="card-img-top" alt="variety of pastries on a wooden board including cinnamon rolls, and turnovers with icing and fruit filling.">
+    
+    <div class="card-body">
+        <h4 class="card-title">Pastries</h4>
+
+        <div class="accordion">
+       
+        <details class="accordion-item" name="accordionExample" closed>
+
+        <summary class="accordion-header">
+        Description
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+        </summary>
+            
+        <div class="accordion-body">
+            <p class="card-text">Discover flaky, buttery, and delicious pastries, from croissants and cinnamon rolls to tarts and turnovers.</p>    
+        </div>
+
+        </details>
+
+        </div>
+
+        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#pastryDialog">
+        Explore Pastries
+         </button>
+
+    <dialog class="dialog" id="pastryDialog">
+  
+        <div class="dialog-header">
+        <h1 class="dialog-title">Flaky but Make It Tasty!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+ 
+        <div class="dialog-body">
+         <p>Pastries are all about delicious layers and textures. Enjoy a flaky croissant with your morning coffee or treat yourself to a warm, gooey cinnamon roll. "Get Flaky!" for more information. </p>
+         </div>
+  
+         <div class="dialog-footer">
+         <button type="button" class="btn-solid theme-primary">Get Flaky!</button>
+        </div>
+    </dialog>
+
+    </div>
+
+             </div>
+
+        </section>
+
+
+
+         <section class="col-12 md:col-6 lg:col-4">
+             <div class="card h-100">
+        <img src="images/cookies.jpeg" class="card-img-top" alt="variety of cookies with various shapes, sizes and flavours. Some soft, with icing or with toppings.">
+    
+    <div class="card-body">
+        <h4 class="card-title">Cookies</h4>
+
+        <div class="accordion">
+       
+        <details class="accordion-item" name="accordionExample" closed>
+
+        <summary class="accordion-header">
+        Description
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+        </summary>
+            
+        <div class="accordion-body">
+            <p class="card-text">Whether soft and chewy or crisp and crunchy, cookies are a timeless treat with endless flavour combinations.</p>    
+        </div>
+
+        </details>
+
+        </div>
+
+        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#cookieDialog">
+        Explore Cookies
+         </button>
+
+    <dialog class="dialog" id="cookieDialog">
+  
+        <div class="dialog-header">
+        <h1 class="dialog-title">Cookie Monster Approved!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+ 
+        <div class="dialog-body">
+         <p>From classic chocolate chip to colourful sugar cookies, they are all perfect for sharing, gifting, or keeping all to yourself. Enjoy with a warm cup or coffee, or a nice cold glass of milk. "Get Cookie-ing!" for more information! </p>
+         </div>
+  
+         <div class="dialog-footer">
+         <button type="button" class="btn-solid theme-primary">Get Cookie-ing!</button>
+        </div>
+    </dialog>
+
+    </div>
+
+        </div>
+
+        </section>
+
+
+
+
+         <section class="col-12 md:col-6 lg:col-4">
+             <div class="card h-100">
+        <img src="images/w1.jpg" class="card-img-top" alt="variety of donuts on a marble surface with sprinkles, powered sugar, and chocolate">
+    
+    <div class="card-body">
+        <h4 class="card-title">Donuts</h4>
+
+        <div class="accordion">
+       
+        <details class="accordion-item" name="accordionExample" closed>
+
+        <summary class="accordion-header">
+        Description
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+        </summary>
+            
+        <div class="accordion-body">
+            <p class="card-text">Glazed, filled, sprinkled, or frosted — donuts bring a little sweetness and fun to every bite!</p>    
+        </div>
+
+        </details>
+
+        </div>
+
+        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#donutDialog">
+        Explore Donuts
+         </button>
+
+    <dialog class="dialog" id="donutDialog">
+  
+        <div class="dialog-header">
+        <h1 class="dialog-title">Donut Worry, Be Happy</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+ 
+        <div class="dialog-body">
+         <p>Donuts come in all shapes, sizes, and flavours. Whether you prefer a simple glazed donut or one topped with colourful sprinkles, there's a flavour for everyone. "Donut Stop Here!" and learn more!</p>
+         </div>
+  
+         <div class="dialog-footer">
+         <button type="button" class="btn-solid theme-primary">Donut Stop Here!</button>
+        </div>
+    </dialog>
+
+    </div>
+
+            </div>
+
+        </section>
+
+
+
+
+         <section class="col-12 md:col-6 lg:col-4">
+            <div class="card h-100">
+        <img src="images/w1.jpg" class="card-img-top" alt="variety of ice cream scoops in bowls with garnishes.">
+    
+    <div class="card-body">
+        <h4 class="card-title">Ice Cream</h4>
+
+        <div class="accordion">
+       
+        <details class="accordion-item" name="accordionExample" closed>
+
+        <summary class="accordion-header">
+        Description
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+        </summary>
+            
+        <div class="accordion-body">
+            <p class="card-text">Cool down with creamy classics, fruity scoops, and exciting flavours that make every day feel like summer!</p>    
+        </div>
+
+        </details>
+
+        </div>
+
+        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#icecreamDialog">
+        Go Somewhere
+         </button>
+
+    <dialog class="dialog" id="icecreamDialog">
+  
+        <div class="dialog-header">
+        <h1 class="dialog-title">Scoop There It Is!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+ 
+        <div class="dialog-body">
+         <p>From classic chocolate and vanilla to fun and unique flavour combinations, ice cream is the perfect frozen treat for any season. Pair it with your favourite toppings or even another dessert for the ultimate treat. "Scoop it Up!" for more information! </p>
+         </div>
+  
+         <div class="dialog-footer">
+         <button type="button" class="btn-solid theme-primary">	Scoop It Up!</button>
+        </div>
+    </dialog>
+
+    </div>
+
+        </div>
+
+        </section>
+
+
+
+
+         <section class="col-12 md:col-6 lg:col-4">
+             <div class="card h-100">
+        <img src="images/w1.jpg" class="card-img-top" alt="variety of colourful candies in bowls">
+    
+    <div class="card-body">
+        <h4 class="card-title">Candy and Sweets</h4>
+
+        <div class="accordion">
+       
+        <details class="accordion-item" name="accordionExample" closed>
+
+        <summary class="accordion-header">
+        Description
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+        </summary>
+            
+        <div class="accordion-body">
+            <p class="card-text">Explore a colourful world of sweet treats, from gummy candies and chocolates to lollipops and other favourites!</p>    
+        </div>
+
+        </details>
+
+        </div>
+
+        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#candyDialog">
+        Explore Candy and Sweets
+         </button>
+
+    <dialog class="dialog" id="candyDialog">
+  
+        <div class="dialog-header">
+        <h1 class="dialog-title">A little something sweet</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+ 
+        <div class="dialog-body">
+         <p>Small treats can bring the biggest smiles. Discover a variety of candies and sweets, perfect for satisfying your sweet tooth or sharing with friends! "Make it Sweet! for more information!" </p>
+         </div>
+  
+         <div class="dialog-footer">
+         <button type="button" class="btn-solid theme-primary">Make it Sweet!</button>
+        </div>
+    </dialog>
+
+    </div>
+
+        </div>
+
+        </section>
+    
+
+
+    
+    </div>
+    
+
+</div>
+
+</body>
+</html>
